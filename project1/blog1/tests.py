@@ -9,7 +9,7 @@ class Blog1TestCase(TestCase):
         Board.objects.create(title='why',pic='')
 
     def testCount(self):
-        return self.assertEqual(Board.objects.all().count(), 1)
+        return self.assertEqual(Board.objects.all().count(), 3)
 
     def test1(self):
         return self.assertEqual(Board.objects.get(title='hello').title, 'hello')
